@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: mdp_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      # "port_sur_ta_machine:port_dans_le_conteneur"
+      - "5433:5432"
+    volumes:
+      # Stockage persistant : les donnees survivent a un redemarrage
+      - pgdata:/var/lib/postgresql/data
+      # Tout fichier .sql place ici est execute AU PREMIER demarrage seulement
+      - ./sql:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:

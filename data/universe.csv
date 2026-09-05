@@ -1,0 +1,16 @@
+vendor_symbol,name,currency,mic,country
+AIR.PA,Airbus SE,EUR,XPAR,FR
+MC.PA,LVMH,EUR,XPAR,FR
+TTE.PA,TotalEnergies,EUR,XPAR,FR
+SAN.PA,Sanofi,EUR,XPAR,FR
+SAP.DE,SAP SE,EUR,XETR,DE
+SIE.DE,Siemens AG,EUR,XETR,DE
+ALV.DE,Allianz SE,EUR,XETR,DE
+ASML.AS,ASML Holding,EUR,XAMS,NL
+INGA.AS,ING Groep,EUR,XAMS,NL
+ISP.MI,Intesa Sanpaolo,EUR,XMIL,IT
+ITX.MC,Industria de Diseno Textil,EUR,XMAD,ES
+SHEL.L,Shell plc,GBp,XLON,GB
+AZN.L,AstraZeneca,GBp,XLON,GB
+NESN.SW,Nestle SA,CHF,XSWX,CH
+NOVN.SW,Novartis AG,CHF,XSWX,CH
