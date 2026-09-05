@@ -3,3 +3,8 @@ pandas>=2.2
 yfinance>=0.2.40
 psycopg[binary]>=3.1
 python-dotenv>=1.0
+
+# Etape 3 : taux de change BCE
+requests>=2.31
+# Fournit la base de donnees des fuseaux horaires, absente de Windows
+tzdata>=2024.1
