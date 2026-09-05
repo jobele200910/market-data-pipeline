@@ -8,3 +8,6 @@ python-dotenv>=1.0
 requests>=2.31
 # Fournit la base de donnees des fuseaux horaires, absente de Windows
 tzdata>=2024.1
+
+# Etape 4 : calendriers d'echange
+exchange-calendars>=4.5
